@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* universal selectors */
+        *{
+            background-color: blueviolet;
+        }
+        div{
+            color:pink;
+            font: size 40px;;
+        }
+        .textcolor{
+            color: blue;
+        }
+        .largetext{
+            font-size: 40px;
+        }
+        .textcolor .largetext{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        #unique{
+            font-size: 30px;
+        }
+        h4,a,h3{
+            color: yellow;
+        }
+        h3{
+            font-size: 60px;
+        }
+        /* Desendent selector */
+        div p span {
+            color: red;
+        }
+        /* children selectors */
+        div>p>span{
+            color:yellowgreen;
+        }
+        a[target="blank"]{
+            color: aqua;
+
+        }
+
+        /* table border */
+        table{
+            border-collapse: collapse;
+        }
+        td,th{
+            border: 1px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <!-- element selectors -->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae in eligendi laborum voluptates aut, deserunt veniam ex, labore vitae assumenda fuga voluptas, nobis architecto quos dolores! Quis illum numquam unde!</p>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem placeat, maxime ipsum doloremque quis at laboriosam, commodi assumenda temporibus omnis, sint facere velit? Ipsam, est nihil ad placeat modi ab.</p>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ipsa excepturi alias rerum, magnam sint molestias, quae officiis cum consectetur, quas veritatis quia nulla. Alias minima temporibus pariatur laboriosam impedit.</p>
+<div>
+    <h1>First elements</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi neque laboriosam fugit asperiores, enim, laudantium consequuntur quas ullam excepturi corrupti non mollitia aliquam perferendis perspiciatis maiores, repudiandae nesciunt ducimus eius?</p>
+</div>
+
+<!-- class selectors -->
+<h1>class selectors</h1>
+
+<p class="textcolor largetext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, rerum error assumenda consectetur officiis numquam, eaque praesentium quasi consequatur eius reprehenderit placeat reiciendis eos at tempora magni quam nulla ipsum.</p>
+
+<p class="largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sit iusto molestiae fugiat pariatur dignissimos. Est quisquam commodi corrupti expedita quidem enim natus dolorem totam assumenda, perspiciatis corporis neque sunt.</p>
+
+<P class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt quod laboriosam reiciendis totam quidem laborum quaerat, minima consequuntur libero id quas dolor autem est eligendi. Velit pariatur excepturi incidunt?</P>
+
+<!-- Id selectors -->
+
+<h1>ID Selectors</h1>
+
+<p class="textcolor largetext" id="unique">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit, rerum error assumenda consectetur officiis numquam, eaque praesentium quasi consequatur eius reprehenderit placeat reiciendis eos at tempora magni quam nulla ipsum.</p>
+
+<p class="largetext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sit iusto molestiae fugiat pariatur dignissimos. Est quisquam commodi corrupti expedita quidem enim natus dolorem totam assumenda, perspiciatis corporis neque sunt.</p>
+
+<P class="textcolor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis deserunt quod laboriosam reiciendis totam quidem laborum quaerat, minima consequuntur libero id quas dolor autem est eligendi. Velit pariatur excepturi incidunt?</P>
+
+<!-- Grouping selectors -->
+<h4>iam h4</h4>
+<a href="http://nados.io" target="blank">NADOS</a>
+<h3>i am h3</h3>
+
+<!-- combinator selector -->
+   
+<!-- Desendent selector -->
+
+<div>
+    <p>
+        <span>i am direct child</span>
+    </p>
+</div>
+
+<div>
+    <span>
+    <p>
+        <span>i am indirect chid</span>
+    </p>
+    </span>
+</div>
+
+<!-- Attributes selectors -->
+<a href="http.//nados.io" target="blank">NADOS</a>
+<a href="http.//google.in">GOOGLE</a>
+<a href="http.//netflix">NETFLIX</a>
+
+
+
+
+
+
+    
+</body>
+</html>
