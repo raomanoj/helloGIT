@@ -42,7 +42,17 @@ console.log(f);
 // single quotes , double quotes , backtick
 var str = (a);
 console.log(typeof str);
+str = "How are doin ?\ni am fine. how about you?"
+// backslash n("\n")
 console.log(str);
+
+var b = `hi hope you guys are 
+able grasp the concepts`
+console.log(b);
+
+var num = 200;
+console.log(`half of ${num} is ${num/2}`);
+
 
 
 
